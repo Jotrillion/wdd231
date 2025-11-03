@@ -65,16 +65,18 @@ header span {
     text-decoration: none;
     border-bottom: solid 1px #ddd;
     color: white;
-    
+
 }
 
 .navigation li.current {
     background-color: #BBBBBB;
 }
 
-.navigation li.final, .navigation li.chamber  {
+.navigation li.final,
+.navigation li.chamber {
     background-color: #333333;
 }
+
 .navigation a:hover {
     background-color: black;
 }
@@ -234,7 +236,7 @@ main {
 #Certificate button.active {
     background-color: #333333;
     color: white;
-    border-color: #333333;
+    border-color: #666666;
 }
 
 #Certificate button:hover {
