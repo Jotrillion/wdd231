@@ -1,0 +1,289 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    height: auto;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+
+
+
+header span {
+    font-size: 1.2rem;
+    color: black;
+
+}
+
+.hamburger {
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+    color: white;
+    
+}
+
+.navigation li.current {
+    background-color: #BBBBBB;
+}
+
+.navigation li.final, .navigation li.chamber  {
+    background-color: #333333;
+}
+.navigation a:hover {
+    background-color: black;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 4px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #eee;
+}
+
+footer {
+    background-color: #BBBBBB;
+    padding: 1rem 10px;
+    text-align: center;
+
+}
+
+main {
+    column-gap: 20px;
+    padding: .8rem 10px;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+#myself {
+    grid-column: 1/4;
+
+
+}
+
+#myself h2 {
+    border: solid 1px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+#myself h3 {
+    border: solid 1px #eee;
+    padding: 50px;
+    margin: auto;
+    background-color: #BBBBBB;
+}
+
+#photo {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+#photo h2 {
+    border: solid 1px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+
+}
+
+#photo img {
+    display: block;
+    margin: 0 auto;
+
+}
+
+.pic {
+    border: solid 1px #eee;
+    background-color: #BBBBBB;
+}
+
+#Certificate {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+
+}
+
+#Certificate h2 {
+    border: solid 1px;
+    grid-column: 1/4;
+
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+
+
+
+
+}
+
+
+
+#Certificate .all {
+    grid-column: 1/2;
+    border-radius: 5px;
+    border: solid 1px #eee;
+    text-align: center;
+    background-color: #BBBBBB;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+#Certificate .cse {
+    grid-column: 2/3;
+    border-radius: 5px;
+    border: solid 1px #eee;
+    text-align: center;
+    background-color: #BBBBBB;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+#Certificate .wdd {
+    grid-column: 3/4;
+    border-radius: 5px;
+    border: solid 1px #eee;
+    text-align: center;
+    background-color: #BBBBBB;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Active and hover states for filter buttons */
+#Certificate button.active {
+    background-color: #333333;
+    color: white;
+    border-color: #333333;
+}
+
+#Certificate button:hover {
+    background-color: #666666;
+    color: white;
+}
+
+.card {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: solid 1px #eee;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.cour {
+    grid-column: 1/4;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    background-color: #BBBBBB;
+}
+
+.card.completed .cour {
+    background-color: #90EE90;
+    color: #006400;
+    font-weight: bold;
+}
+
+.credit {
+    text-align: center;
+    grid-column: 1/4;
+}
+
+/*#Certificate .wdd130 {
+    grid-column: 1/4;
+    border: solid 1px #eee;
+    text-align: center;
+}
+
+#Certificate .wdd131 {
+    grid-column: 1/4;
+    border: solid 1px #eee;
+    text-align: center;
+}
+
+#Certificate .wdd231 {
+    grid-column: 1/4;
+    border: solid 1px #eee;
+    text-align: center;
+}*/

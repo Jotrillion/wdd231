@@ -1,10 +1,93 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-US">
+
 <head>
-    <meta charset="UTF-8" />
-    <title>title</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta name="description" content="this is the home Page of the final project of the course ">
+    <meta name="author" content="JOSAPHAT NGANDU">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <img src="images/maison.svg" alt="myhome" width="512" height="512">
+        <span> My sample site</span>
+        <button id="ham" class="hamburger" aria-label="Toggle navigation menu"></button>
+    </header>
+
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li class="chamber"><a href="#">Chamber Project</a></li>
+            <li class="final"><a href="#">Final Project</a></li>
+
+
+        </ul>
+    </nav>
+
+
+    <main>
+        <h1 id="Home">Home</h1>
+        <div class="section">
+            <section id="myself">
+
+                <h2>About Me</h2>
+                <h3>I am Josaphat ngandu. I was born in the democratic republic of congo. I am a software engineer. i am
+                    currently
+                    studying software development at byui.</h3>
+            </section>
+            <section id="photo">
+                <h2>Student Photo</h2>
+                <div class="pic">
+                    <img src="images/me.jpg" alt="mypic" width="250" height="250">
+                </div>
+            </section>
+            <section class="coursecard" id="Certificate">
+
+                <h2>Web Certificate Courses</h2>
+
+                <button id="first" class="all" aria-label="Show all courses">All</button>
+                <button id="second" class="cse" aria-label="Show CSE courses only">CSE</button>
+                <button id="third" class="wdd" aria-label="Show WDD courses only">WDD</button>
+
+
+
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/Jotrillion" target="_blank"> <img src="images/github.svg"
+                    alt="mygithubprofile"></a>
+            <a href="https://www.facebook.com/?locale=fr_FR" target="_blank"> <img src="images/facebook (1).svg"
+                    alt="myfacebookprofile"></a>
+            <a href="www.linkedin.com/in/j-djany-elyon-llsmith-ngandu-llm-msc-mba-b7a10756" target="_blank"> <img
+                    src="images/linkedin.svg" alt="mylinkedinprofie"></a>
+        </div>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span> <span>&#x1F499;</span>JOSAPHAT NGANDU <span>&#x1F499;</span>
+            D.R.Congo
+        </p>
+        <p id="lastModified"></p>
+
+    </footer>
 </body>
+
 </html>
