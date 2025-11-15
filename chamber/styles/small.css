@@ -120,6 +120,16 @@ header span {
 .navigation a:hover {
     background-color: #000000;
 }
+.navigation ul li.current a:link,
+.navigation ul li.current a:visited,
+.navigation ul li.directory a:link,
+.navigation ul li.directory a:visited,
+.navigation ul li.join a:link,
+.navigation ul li.join a:visited,
+.navigation ul li.discover a:link,
+.navigation ul li.discover a:visited {
+    color: #ffffff;
+}
 
 .social {
     display: flex;
