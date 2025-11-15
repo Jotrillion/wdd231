@@ -88,7 +88,7 @@ header span {
     padding: 0;
 }
 
-.navigation a {
+.navigation ul li a {
     display: block;
     padding: .8rem 10px;
     text-decoration: none;
@@ -98,10 +98,10 @@ header span {
 }
 
 .navigation li.current {
-    background-color: #666666;
+    background-color: #444444;
 }
 
-.navigation li.current a {
+.navigation ul li.current a {
     color: #ffffff;
 }
 
@@ -111,9 +111,9 @@ header span {
     background-color: #333333;
 }
 
-.navigation li.directory a,
-.navigation li.join a,
-.navigation li.discover a {
+.navigation ul li.directory a,
+.navigation ul li.join a,
+.navigation ul li.discover a {
     color: #ffffff;
 }
 
