@@ -17,7 +17,8 @@ header {
 header img {
     display: block;
     height: auto;
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     padding-bottom: 5px;
 
 }
@@ -97,13 +98,23 @@ header span {
 }
 
 .navigation li.current {
-    background-color: #BBBBBB;
+    background-color: #666666;
+}
+
+.navigation li.current a {
+    color: white;
 }
 
 .navigation li.directory,
 .navigation li.join,
 .navigation li.discover {
     background-color: #333333;
+}
+
+.navigation li.directory a,
+.navigation li.join a,
+.navigation li.discover a {
+    color: white;
 }
 
 .navigation a:hover {
@@ -187,7 +198,7 @@ footer {
 }
 
 main {
-    gap: 10 px;
+    gap: 10px;
     padding: 10px;
     margin: 10px;
 }
@@ -235,4 +246,9 @@ main {
 
 .list .phone {
     display: none;
+}
+.photo {
+    aspect-ratio: 16 / 9;
+     width: 100%;
+     object-fit: cover;
 }

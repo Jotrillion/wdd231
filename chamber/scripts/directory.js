@@ -30,9 +30,10 @@ function displayMembers(members) {
         // Create elements for each member
         let memberCard = document.createElement('section');
         memberCard.classList.add("pic");
-        let memberName = document.createElement('h3');
+        let memberName = document.createElement('h2');
         let memberAdress = document.createElement("p");
         let memberImage = document.createElement('img');
+        memberImage.classList.add("photo");
         let memberPhone = document.createElement('p');
         memberPhone.classList.add("phone");
         let memberWebsite = document.createElement('a');
@@ -54,8 +55,8 @@ function displayMembers(members) {
         memberImage.setAttribute('alt', `${member.name} logo`);
         memberImage.setAttribute('loading', 'lazy');
         memberImage.setAttribute('decoding', 'async');
-        memberImage.setAttribute('width', '200');
-        memberImage.setAttribute('height', '150');
+        memberImage.setAttribute('width', '180');
+        memberImage.setAttribute('height', '180');
 
         // Append elements to card
         memberCard.appendChild(memberName);
