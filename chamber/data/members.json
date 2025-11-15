@@ -1,0 +1,141 @@
+[
+    {
+        "id": 101,
+        "name": "Apex Innovations Corp.",
+        "addresses": {
+            "street": "450 Market St, Suite 1200",
+            "city": "KINSHASA",
+            "state": "KINSHASA",
+            "zip": "94103"
+        },
+        "phone_numbers": "1-800-555-0199",
+        "website_urls": "https://www.apexinnovations.com",
+        "image_or_icon_file_names": "images/apex.png",
+        "membership_level": "Gold",
+        "other_information": {
+            "industry": "Software Development",
+            "established_year": 2018,
+            "contact_email": "info@apexinnovations.com"
+        }
+    },
+    {
+        "id": 102,
+        "name": "Green Earth Organics",
+        "addresses": {
+            "street": "12 Farm Lane, Building B",
+            "city": "KINSHASA",
+            "state": "KINSHASA",
+            "zip": "78704"
+        },
+        "phone_numbers": "1-800-555-0200",
+        "website_urls": "https://www.greenearthorgo.com",
+        "image_or_icon_file_names": "images/green.png",
+        "membership_level": "Gold",
+        "other_information": {
+            "industry": "Sustainable Goods Retail",
+            "established_year": 2015,
+            "specialty": "Eco-friendly packaging"
+        }
+    },
+    {
+        "id": 103,
+        "name": "Coastal Construction Group",
+        "addresses": {
+            "street": "77 Beach Blvd, Office 301",
+            "city": "KINSHASA",
+            "state": "KINSHASA",
+            "zip": "33139"
+        },
+        "phone_numbers": "1-800-555-0201",
+        "website_urls": "https://www.coastalconstruct.net",
+        "image_or_icon_file_names": "images/coast.png",
+        "membership_level": "Silver",
+        "other_information": {
+            "industry": "Residential Building",
+            "established_year": 1995,
+            "certifications": [
+                "LEED Certified"
+            ]
+        }
+    },
+    {
+        "id": 104,
+        "name": "Digital Horizon Marketing",
+        "addresses": {
+            "street": "100 Innovation Drive",
+            "city": "KINSHASA",
+            "state": "KINSHASA",
+            "zip": "98101"
+        },
+        "phone_numbers": "1-800-555-0202",
+        "website_urls": "https://www.digitalhorizonmkt.com",
+        "image_or_icon_file_names": "images/digit.png",
+        "membership_level": "Silver",
+        "other_information": {
+            "industry": "Digital Marketing",
+            "established_year": 2020,
+            "services": [
+                "SEO",
+                "PPC",
+                "Social Media"
+            ]
+        }
+    },
+    {
+        "id": 105,
+        "name": "Phoenix Financial Services",
+        "addresses": {
+            "street": "500 Main Street, Floor 15",
+            "city": "KINSHASA",
+            "state": "KINSHASA",
+            "zip": "10001"
+        },
+        "phone_numbers": "1-800-555-0203",
+        "website_urls": "https://www.phoenixfs.org",
+        "image_or_icon_file_names": "images/phoenix.png",
+        "membership_level": "Silver",
+        "other_information": {
+            "industry": "Financial Consulting",
+            "established_year": 2005,
+            "focus_area": "Wealth Management"
+        }
+    },
+    {
+        "id": 106,
+        "name": "The Corner Cafe & Bakery",
+        "addresses": {
+            "street": "88 Elm Avenue",
+            "city": "KINSHASA",
+            "state": "KINSHASA",
+            "zip": "60605"
+        },
+        "phone_numbers": "1-800-555-0204",
+        "website_urls": "https://www.cornercafe.com",
+        "image_or_icon_file_names": "images/CORNER.png",
+        "membership_level": "Gold",
+        "other_information": {
+            "industry": "Food & Beverage",
+            "established_year": 2022,
+            "rating": 4.8
+        }
+    },
+    {
+        "id": 107,
+        "name": "Global Logistics Network",
+        "addresses": {
+            "street": "22 Gateway Blvd, Dock 4A",
+            "city": "KINSHASA",
+            "state": "KINSHASA",
+            "zip": "77002"
+        },
+        "phone_numbers": "1-800-555-0205",
+        "website_urls": "https://www.glnet.co",
+        "image_or_icon_file_names": "images/global.png",
+        "membership_level": "Silver",
+        "other_information": {
+            "industry": "Shipping and Freight",
+            "established_year": 1999,
+            "global_reach": true
+        }
+    }
+]
