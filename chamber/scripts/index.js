@@ -6,7 +6,7 @@ const url = 'data/members.json';
 
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const captionDesc = document.querySelector('.weather-desc');
 const high = document.querySelector('#high');
 const low = document.querySelector('#low');
 const humidity = document.querySelector('#hum');
