@@ -120,6 +120,7 @@ header span {
 .navigation a:hover {
     background-color: #000000;
 }
+
 .navigation ul li.current a:link,
 .navigation ul li.current a:visited,
 .navigation ul li.directory a:link,
@@ -263,3 +264,4 @@ main {
     width: 100%;
     object-fit: cover;
 }
+

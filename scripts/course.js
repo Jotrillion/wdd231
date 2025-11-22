@@ -84,6 +84,9 @@ const allBtn = document.querySelector(".all");
 const cseBtn = document.querySelector(".cse");
 const wddBtn = document.querySelector(".wdd");
 
+// Get dialog elements
+const courseDetails = document.querySelector("#course-details");
+
 // Function to remove active class from all buttons
 function clearActiveButtons() {
     allBtn.classList.remove('active');
@@ -132,6 +135,12 @@ function coursecard(courses) {
         card.innerHTML = `
         <h3 class="cour">${course.subject} ${course.number}${checkmark}</h3>
         `;
+
+        // Add click event listener to each card
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
         document.querySelector('.coursecard').appendChild(card);
     })
 
@@ -140,4 +149,23 @@ function coursecard(courses) {
     creditInfo.classList.add('credit');
     creditInfo.textContent = `Total credits: ${totalCredits}`;
     document.querySelector('.coursecard').appendChild(creditInfo);
+}
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
+
+    // Get the close button after it's created in the DOM
+    const closeModalBtn = document.querySelector("#closeModal");
+    closeModalBtn.addEventListener("click", () => {
+        courseDetails.close();
+    });
 }

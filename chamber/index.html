@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory</title>
+    <title>Home</title>
     <meta name="description" content="this is the home Page of the final project of the course ">
     <meta name="author" content="JOSAPHAT NGANDU">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
@@ -20,9 +20,9 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/png" />
-    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 38rem)">
+    <link rel="stylesheet" href="styles/index-large.css" media="screen and (min-width: 38rem)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -31,11 +31,11 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="data/members.json" as="fetch" crossorigin="anonymous">
-    <link rel="preload" href="scripts/directory.js" as="script">
+    <link rel="preload" href="scripts/index.js" as="script">
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
@@ -58,12 +58,47 @@
         </ul>
     </nav>
     <main>
-        <h1>Directory</h1>
-        <div class="menu">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+        <div>
+            <img src="images/gombes.webp" alt="image of gombe business center" loading="lazy" height="300" width="900">
+            <div class="text">
+                <h1>DISCOVER OPPORTUNITIES</h1>
+                <button id="join">JOIN </button>
+            </div>
         </div>
-        <div id="cards"></div>
+
+        <h2>Home</h2>
+        <div id="cards">
+            <div id="headevent">
+                <section class="events">
+                    <h3>Events</h3>
+                    <p>We are organizing a meeting up between members.</p>
+                    <p>We are organizing an event for marketing the products.</p>
+                    <p>We are organizing a meet up with the government </p>
+                </section>
+                <section class="weather">
+                    <h3>Current Weather</h3>
+                    <div class="tempa">
+                        <img id="weather-icon" src="" alt="">
+                        <div class="temperature">
+                            <p> <span id="current-temp"></span></p>
+                            <figcaption></figcaption>
+                            <p>High: <span id="high"></span></p>
+                            <p>Low: <span id="low"></span></p>
+                            <p>Humidity: <span id="hum"></span></p>
+                            <p>Sunrise: <span id="sunrise"></span></p>
+                            <p>Sunset: <span id="sunset"></span></p>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="forecast">
+                    <h3>Weather Forecast</h3>
+                    <div id="idcast"></div>
+
+                </section>
+            </div>
+            <div id="business"></div>
+        </div>
     </main>
 
     <footer class="footer">
