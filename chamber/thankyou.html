@@ -4,25 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>and chamber name</title>
-    <meta name="description" content="this is the home Page of the final project of the course ">
+    <title>Join - Gombe Chamber of Commerce</title>
+    <meta name="description" content="Apply for membership with the Gombe Chamber of Commerce">
     <meta name="author" content="JOSAPHAT NGANDU">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="icon" href="favicon_io/favicon.ico">
-    <meta property="og:title" content="Directory">
-    <meta property="og:description" content="Discover my business chamber Directory page and chamber website">
-    <meta property="og:url" content="http://127.0.0.1:5500/chamber/directory.html">
+    <meta property="og:title" content="Join">
+    <meta property="og:description" content="Discover my business chamber Join page and chamber website">
+    <meta property="og:url" content="http://127.0.0.1:5500/chamber/join.html">
 
     <meta property="og:image" content="http://127.0.0.1:5500/chamber/webpic.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/png">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/join.css">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/index-large.css" media="screen and (min-width: 38rem)">
+    <link rel="stylesheet" href="styles/join-large.css" media="screen and (min-width: 38rem)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -31,11 +32,11 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="data/members.json" as="fetch" crossorigin="anonymous">
-    <link rel="preload" href="scripts/index.js" as="script">
+    <link rel="preload" href="scripts/form.js" as="script">
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
@@ -49,56 +50,16 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul class="nav-list">
-            <li class="current"><a href="index.html">Home</a></li>
+            <li class="home"><a href="index.html">Home</a></li>
             <li class="directory"><a href="directory.html">Directory</a></li>
-            <li class="join"><a href="join.html">Join</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
             <li class="discover"><a href="#">Discover</a></li>
-
-
         </ul>
     </nav>
     <main>
         <div>
-            <img src="images/gombes.webp" alt="image of gombe business center" loading="lazy" height="300" width="900">
-            <div class="text">
-                <h1>DISCOVER OPPORTUNITIES</h1>
-                <button id="join">JOIN </button>
-            </div>
-        </div>
-
-        <h2>Home</h2>
-        <div id="cards">
-            <div id="headevent">
-                <section class="events">
-                    <h3>Events</h3>
-                    <p>We are organizing a meeting up between members.</p>
-                    <p>We are organizing an event for marketing the products.</p>
-                    <p>We are organizing a meet up with the government </p>
-                </section>
-                <section class="weather">
-                    <h3>Current Weather</h3>
-                    <div class="tempa">
-                        <img id="weather-icon" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                            alt="Weather icon">
-                        <div class="temperature">
-                            <p> <span id="current-temp"></span></p>
-                            <p class="weather-desc"></p>
-                            <p>High: <span id="high"></span></p>
-                            <p>Low: <span id="low"></span></p>
-                            <p>Humidity: <span id="hum"></span></p>
-                            <p>Sunrise: <span id="sunrise"></span></p>
-                            <p>Sunset: <span id="sunset"></span></p>
-                        </div>
-                    </div>
-
-                </section>
-                <section class="forecast">
-                    <h3>Weather Forecast</h3>
-                    <div id="idcast"></div>
-
-                </section>
-            </div>
-            <div id="business"></div>
+        <h1>Membership Application Details</h1>
+        <div id="results"></div>
         </div>
     </main>
 
@@ -129,6 +90,6 @@
         </div>
 
     </footer>
-</body>
 
+ 
 </html>
