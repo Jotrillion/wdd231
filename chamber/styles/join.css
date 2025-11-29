@@ -191,13 +191,7 @@ footer {
     cursor: pointer;
 }
 
-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
-    align-content: center;
-    gap: 20px;
-}
 
 .pic {
     border: 1px solid #cccccc;
@@ -650,7 +644,7 @@ form button[type="submit"] {
 
 #card button[id^="openbutton"] {
     padding: 0.5rem 1rem;
-    background-color: #0066cc;
+    background-color: #333333;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -660,7 +654,7 @@ form button[type="submit"] {
 }
 
 #card button[id^="openbutton"]:hover {
-    background-color: #004999;
+    background-color: #000000;
 }
 
 #card dialog {
