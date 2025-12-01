@@ -1,0 +1,13 @@
+@media screen and (min-width: 64rem) {
+
+    #discover {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #discover article figure:hover img {
+        box-shadow: 0 0 50px #333;
+        cursor: pointer;
+    }
+
+}

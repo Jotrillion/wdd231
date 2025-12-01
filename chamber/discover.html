@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory</title>
-    <meta name="description" content="this is the home Page of the final project of the course ">
+    <title>Discover</title>
+    <meta name="description" content="this is the discover page of the final project of the course ">
     <meta name="author" content="JOSAPHAT NGANDU">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
@@ -13,16 +13,17 @@
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="icon" href="favicon_io/favicon.ico">
     <meta property="og:title" content="Directory">
-    <meta property="og:description" content="Discover my business chamber Directory page and chamber website">
+    <meta property="og:description" content="Discover my business chamber discover page and chamber website">
     <meta property="og:url" content="http://127.0.0.1:5500/chamber/directory.html">
 
     <meta property="og:image" content="http://127.0.0.1:5500/chamber/webpic.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/png" />
-    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/discover.css">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 38rem)">
+    <link rel="stylesheet" href="styles/discover-medium.css">
+    <link rel="stylesheet" href="styles/discover-large.css" media="screen and (min-width: 38rem)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -31,11 +32,11 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="data/members.json" as="fetch" crossorigin="anonymous">
-    <link rel="preload" href="scripts/directory.js" as="script">
+    <link rel="preload" href="scripts/discover.js" as="script">
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/discover.js" defer type="module"></script>
 </head>
 
 <body>
@@ -49,21 +50,17 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul class="nav-list">
-            <li class="current"><a href="index.html">Home</a></li>
+            <li class="home"><a href="index.html">Home</a></li>
             <li class="directory"><a href="directory.html">Directory</a></li>
             <li class="join"><a href="join.html">Join</a></li>
-            <li class="discover"><a href="discover.html">Discover</a></li>
+            <li class="current"><a href="discover.html">Discover</a></li>
 
 
         </ul>
     </nav>
     <main>
-        <h1>Directory</h1>
-        <div class="menu">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
-        <div id="cards"></div>
+        <h1>Discover</h1>
+        <div id="discover"></div>
     </main>
 
     <footer class="footer">
@@ -90,6 +87,7 @@
                 <span id="currentyear"></span> <span>&#x1F499;</span>GOMBE CHAMBER OF COMMERCE <span>&#x1F499;</span>
 
             <p id="lastModified"></p>
+            <p id="visitMessage" class="visit-message"></p>
         </div>
 
     </footer>
