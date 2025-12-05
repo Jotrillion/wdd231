@@ -1,0 +1,109 @@
+@media screen and (min-width: 38rem) {
+
+header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /*header {
+        grid-template-columns: 24px auto;
+    }*/
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+
+
+    }
+
+    /*.nav-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .nav-list li {
+        flex: 1 1 auto;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }*/
+
+    #cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    #cards.list {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+    }
+
+    .footer {
+        display: flex;
+        gap: 30px;
+
+    }
+
+    .list .phone {
+        display: flex;
+    }
+
+    #headevent {
+        display: grid;
+        grid-template-columns: auto 1fr 1fr;
+    }
+
+    .business-spotlight {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    .div {
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        text-align: center; 
+        background-color: #f9f9f9;
+        
+    }
+        .divy {
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+    
+        }
+        .divye {
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+    
+        }
+        .divyer {
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+    
+        }
+        #card {
+            gap: 10px;
+        }
+}

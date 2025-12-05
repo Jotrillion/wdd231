@@ -1,0 +1,17 @@
+.resulted {
+    padding: 2rem;
+    text-align: center;
+}
+
+.resulted h1 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#results {
+    border: 1px solid #cccccc;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    text-align: left;
+}

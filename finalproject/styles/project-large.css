@@ -1,0 +1,87 @@
+@media screen and (min-width: 768px) {
+    header,
+        main,
+        nav,
+        footer {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+    .nav-list li {
+        flex: 1 1 auto;
+    }
+
+    .nav-list a {
+        display: block;
+        color: #eee;
+        padding: 0.75rem;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .nav-list a:hover {
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-color: yellow;
+        border: 1px solid white;
+        color: yellow;
+    }
+        main img {
+            max-width: 100%;
+            height: auto;
+            width : 100%;
+            
+        }
+    
+        .header-content img {
+            max-width: 100%;
+            height: auto;
+        }
+     .info-sections {
+      display: grid;
+       grid-template-columns: 1fr 1fr;
+         gap: 20px;
+     }
+     .info-sections > section {
+         padding: 20px;
+         border: 1px solid #ccc;
+         border-radius: 8px;
+            
+     }
+    main {
+      padding-bottom: 1rem;
+            /* Adjust as needed */
+        }
+    section h4{
+        background-color: #2f2f2f;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        
+    }
+        .main-nav {
+            background-color: #2f2f2f;
+            color: #fff;
+            padding: 5px;
+        }
+    .nav-list {
+        display: flex !important;
+        /* Override display: none from project.css */
+        flex-direction: row;
+        background-color: #2f2f2f;
+        width: auto;
+        text-align: center;
+        list-style: none;
+        justify-content: flex-end;
+                    
+        align-items: center;
+
+            }
+         .header-content{
+            display: block;
+         }
+         #top::before {
+             content: "≡";
+          display: none;   
+         }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Gombe Chamber of Commerce</title>
+    <meta name="description" content="Apply for membership with the Gombe Chamber of Commerce">
+    <meta name="author" content="JOSAPHAT NGANDU">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="icon" href="favicon_io/favicon.ico">
+    <meta property="og:title" content="Join">
+    <meta property="og:description" content="Discover thank you page website">
+    <meta property="og:url" content="http://127.0.0.1:5500/chamber/join.html">
+
+    <meta property="og:image" content="http://127.0.0.1:5500/finalproject/finalproject.html">
+    
+    <meta property="og:image" content="http://127.0.0.1:5500/finalproject/images/bnlogoss.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join-large.css" media="screen and (min-width: 38rem)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="data/members.json" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="scripts/form.js" as="script">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+        <div class="header-content">
+            <img src="images/bnlogoss.webp" alt="BourseNetwork Logo" loading="lazy" class="image" width="500" height="250">
+            <h1 class="heading">BourseNetwork</h1>
+    
+            <button id="top" aria-label="Open navigation menu" aria-expanded="false"></button>
+        </div>
+     <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="face"><a href="https://www.facebook.com/profile.php?id=100064243443107"
+                        target="_blank">Facebook</a>
+                </li>
+                <li class="link"> <a href="https://www.linkedin.com/groups/12701806/" target="_blank">LinkedIn</a></li>
+                <li class="current"><a href="join.html" target="_blank">Review Form</a></li>
+                <li class="final"><a href="index.html">Final Project</a></li>
+            </ul>
+        </nav>
+    <main>
+        <div class="resulted">
+        <h1>Membership Application Details</h1>
+        <div id="results"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="address">
+            <p class="pro">GOMBE CHAMBER OF COMMERCE</p>
+            <p>RUE DE LA PRINCE, GOMBE</p>
+            <p>GOMBE,MAIL 999</p>
+            <p>INFO@GOMBE.COM</p>
+            <p>(150)458609</p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/Jotrillion" target="_blank"> <img src="images/github.svg"
+                    alt="mygithubprofile"></a>
+            <a href="https://www.facebook.com/djanyngandulilsaint?locale=fr_FR" target="_blank"> <img
+                    src="images/facebook.svg" alt="myfacebookprofile"></a>
+            <a href="https://www.linkedin.com/in/j-djany-elyon-llsmith-ngandu-llm-msc-mba-b7a10756" target="_blank">
+                <img src="images/linkedin.svg" alt="mylinkedinprofie"></a>
+        </div>
+        <div class="project">
+            <p>WDD 231 CLASS PROJECT</p>
+            <p>JOSAPHAT NGANDU</p>
+            <p>
+                &copy;
+                <span id="currentyear"></span> <span>&#x1F499;</span>GOMBE CHAMBER OF COMMERCE <span>&#x1F499;</span>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+ 
+</html>

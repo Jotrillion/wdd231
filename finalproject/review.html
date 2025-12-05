@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Followup</title>
+    <meta name="description"
+        content="it is all about product review form for WDD 131 – Dynamic Web Fundamentals projects by Josaphat Ngandu, showcasing skills in HTML, CSS, and dynamic web programming.">
+    <meta name="author" content="Josaphat Ngandu">
+    <link rel="stylesheet" href="styles/form-review.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="scripts/project.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="heading"> Review Form</h1>
+    </header>
+    <main>
+        <h2> Review Form Application</h2>
+        <p>Thanks for posting your review.
+
+    </main>
+    <footer class="site-footer">
+        <p>
+            &copy;
+            <span id="currentyear"></span> <span>&#x1F499;</span> BourseNetwork <span>&#x1F499;</span>
+            D.R.Congo
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the current count from localStorage, or start at 0
+            let reviewCount = localStorage.getItem("reviewCount");
+            reviewCount = reviewCount ? parseInt(reviewCount, 10) : 0;
+
+            // Increment the count
+            reviewCount += 1;
+
+            // Save the new count back to localStorage
+            localStorage.setItem("reviewCount", reviewCount);
+
+
+        });
+    </script>
+</body>
+
+</html>

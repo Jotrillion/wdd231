@@ -1,0 +1,276 @@
+.header-content,
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+main p {
+    color: black;
+}
+
+main {
+    background-color: white;
+
+}
+
+main img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.header-content img {
+    max-width: 150px;
+    height: auto;
+}
+
+.info-sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.info-sections>section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+}
+
+main {
+    padding-bottom: 1rem;
+    /* Adjust as needed */
+}
+
+section h4 {
+    background-color: #2f2f2f;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+#top::before {
+    content: "≡";
+}
+
+#top.show::before {
+    content: "X";
+
+}
+
+.header-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* centers logo and heading */
+}
+
+#top {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.nav-list {
+    display: none;
+    background-color: blue;
+
+    width: 100%;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-list.show {
+    display: flex;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.nav-list li.current {
+    background-color: #444444;
+}
+
+/* Scholarship sections */
+.scholarship-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.scholarship-section h3 {
+    color: #0066cc;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+    border-bottom: 3px solid #0066cc;
+    padding-bottom: 0.5rem;
+}
+
+.scholarship-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.scholarship-card {
+    background-color: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scholarship-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scholarship-card h4 {
+    color: #0066cc;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+.scholarship-card .institution {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.scholarship-card p {
+    margin: 0.5rem 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.scholarship-card .fully-funded {
+    color: #28a745;
+    font-weight: bold;
+    background-color: #d4edda;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.scholarship-card .deadline {
+    color: #dc3545;
+    font-weight: 500;
+}
+
+.scholarship-card .apply-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.5rem;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.scholarship-card .apply-button:hover {
+    background-color: #004999;
+}
+
+/* Error message styling */
+.error-message {
+    background-color: #f8d7da;
+    border: 2px solid #dc3545;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.error-message h3 {
+    color: #721c24;
+    margin-top: 0;
+}
+
+.error-message p {
+    color: #721c24;
+    margin: 0.5rem 0;
+}
+
+.error-message .error-details {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #856404;
+    margin-top: 1rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #eeeeee;
+}
+
+footer {
+    background-color: blue;
+    padding: 1rem 10px;
+    text-align: left;
+    margin: 10px;
+    width: 100%;
+}
+
+footer p,
+footer a,
+footer span {
+    color: black;
+}
+
+footer .social a {
+    border-color: white;
+}
